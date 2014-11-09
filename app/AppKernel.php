@@ -37,6 +37,8 @@ class AppKernel extends Kernel
             new Acme\PayexBundle\AcmePayexBundle(),
             new Acme\KlarnaBundle\AcmeKlarnaBundle(),
             new Acme\OtherExamplesBundle\AcmeOtherExamplesBundle(),
+
+            new Ledjin\Bundle\SagepayBundle\LedjinSagepayBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

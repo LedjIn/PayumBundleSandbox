@@ -41,3 +41,6 @@ parameters:
 
     stripe.secret_key:  EDIT ME
     stripe.publishable_key: EDIT ME
+
+    sagepay.vendor: EDIT ME
+    sagepay.sandbox: true

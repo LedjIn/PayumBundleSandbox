@@ -57,3 +57,7 @@ acme_payment_order_done:
 acme_payment_notifications_list:
     pattern:  /payment/notifications/list
     defaults: { _controller: AcmePaymentBundle:Notifications:list }
+
+acme_payment_prepare_simple_purchase_sagepay_onsite:
+    pattern:  /payment/simple_purchase/sagepay/prepare_onsite
+    defaults: { _controller: AcmePaymentBundle:Sagepay:prepareOnsite }

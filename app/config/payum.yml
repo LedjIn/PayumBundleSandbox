@@ -212,3 +212,8 @@ payum:
             foo_bar_gateway:
                 username: aName
                 password: aPass
+
+        sagepay_onsite:
+            sagepay_onsite:
+                vendor: %sagepay.vendor%
+                sandbox: %sagepay.sandbox%

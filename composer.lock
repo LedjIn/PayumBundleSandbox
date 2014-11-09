@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fdad25cbe4a09028d0696331c1d2b202",
+    "hash": "68b6bb2e90cc0ac9473bf1fbff336e2c",
     "packages": [
         {
             "name": "ajbdev/authorizenet-php-api",
@@ -1502,40 +1502,33 @@
             "time": "2014-09-15 12:42:36"
         },
         {
-            "name": "league/url",
-            "version": "3.1.1",
+            "name": "ledjin/sagepay",
+            "version": "0.1.2",
+            "target-dir": "Ledjin/Sagepay",
             "source": {
                 "type": "git",
-                "url": "https://github.com/thephpleague/url.git",
-                "reference": "53e87bdcfa5dd9709ce538f5680fed6e34eef0b4"
+                "url": "https://github.com/LedjIn/Sagepay.git",
+                "reference": "b33375a6f7d5f6b9573ae2ca3e213f0ba7ae0299"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/url/zipball/53e87bdcfa5dd9709ce538f5680fed6e34eef0b4",
-                "reference": "53e87bdcfa5dd9709ce538f5680fed6e34eef0b4",
+                "url": "https://api.github.com/repos/LedjIn/Sagepay/zipball/b33375a6f7d5f6b9573ae2ca3e213f0ba7ae0299",
+                "reference": "b33375a6f7d5f6b9573ae2ca3e213f0ba7ae0299",
                 "shasum": ""
             },
             "require": {
-                "ext-mbstring": "*",
-                "php": ">=5.3.0",
-                "true/punycode": "~1.0"
-            },
-            "replace": {
-                "bakame/url": "*"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "2.0.*@dev"
+                "payum/core": "~0.12.0",
+                "php": ">=5.3.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "0.1-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "League\\Url\\": "src"
+                "psr-0": {
+                    "Ledjin\\Sagepay": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1544,19 +1537,87 @@
             ],
             "authors": [
                 {
-                    "name": "Ignace Nyamagana Butera",
-                    "email": "nyamsprod@gmail.com",
-                    "homepage": "https://github.com/nyamsprod/",
-                    "role": "Developer"
+                    "name": "Alexandr Jeliuc",
+                    "email": "a2xchip@gmail.com"
+                },
+                {
+                    "name": "LedjIn Labs",
+                    "homepage": "http://www.ledj.in"
+                },
+                {
+                    "name": "Community contributions",
+                    "homepage": "https://github.com/LedjIn/Sagepay"
                 }
             ],
-            "description": "League/url is a lightweight PHP Url manipulating library",
+            "description": "Sagepay payment lib",
+            "homepage": "http://www.ledj.in",
             "keywords": [
-                "parse_url",
-                "php",
-                "url"
+                "payment",
+                "sagepay"
             ],
-            "time": "2014-09-02 07:57:45"
+            "time": "2014-11-09 21:53:48"
+        },
+        {
+            "name": "ledjin/sagepay-bundle",
+            "version": "dev-master",
+            "target-dir": "Ledjin/Bundle/SagepayBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LedjIn/SagepayBundle.git",
+                "reference": "ce2343220e98bb479c67a9de5ced23ba3dcdd1e7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LedjIn/SagepayBundle/zipball/ce2343220e98bb479c67a9de5ced23ba3dcdd1e7",
+                "reference": "ce2343220e98bb479c67a9de5ced23ba3dcdd1e7",
+                "shasum": ""
+            },
+            "require": {
+                "ledjin/sagepay": "~0.1.2",
+                "payum/core": "~0.12.0",
+                "payum/payum-bundle": "~0.12.0",
+                "php": ">=5.3.2"
+            },
+            "type": "bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Ledjin\\Bundle\\SagepayBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexandr Jeliuc",
+                    "email": "a2xchip@gmail.com"
+                },
+                {
+                    "name": "LedjIn Labs",
+                    "homepage": "http://www.ledj.in"
+                },
+                {
+                    "name": "Community contributions",
+                    "homepage": "https://github.com/LedjIn/Sagepay"
+                }
+            ],
+            "description": "Sagepay payment lib",
+            "homepage": "http://www.ledj.in",
+            "keywords": [
+                "Symfony2",
+                "ledjin sagepay",
+                "payment",
+                "payum",
+                "payum bundle",
+                "sagepay"
+            ],
+            "time": "2014-11-09 22:17:45"
         },
         {
             "name": "monolog/monolog",
@@ -1937,22 +1998,22 @@
         },
         {
             "name": "payum/jms-payment-bridge",
-            "version": "dev-master",
+            "version": "0.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Payum/JMSPaymentBridge.git",
-                "reference": "131d2a1a2fde8cf3ba21d0fda89f350d7725c174"
+                "reference": "958d65dce545137197b7a0bc622d7401a3dfeea3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Payum/JMSPaymentBridge/zipball/131d2a1a2fde8cf3ba21d0fda89f350d7725c174",
-                "reference": "131d2a1a2fde8cf3ba21d0fda89f350d7725c174",
+                "url": "https://api.github.com/repos/Payum/JMSPaymentBridge/zipball/958d65dce545137197b7a0bc622d7401a3dfeea3",
+                "reference": "958d65dce545137197b7a0bc622d7401a3dfeea3",
                 "shasum": ""
             },
             "require": {
                 "jms/payment-core-bundle": "~1",
-                "payum/core": "0.13.*@dev",
-                "payum/payum-bundle": "0.13.*@dev",
+                "payum/core": "0.12.*@dev",
+                "payum/payum-bundle": "0.12.*@dev",
                 "php": ">=5.3.2"
             },
             "require-dev": {
@@ -1961,7 +2022,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.13-dev"
+                    "dev-master": "0.12-dev"
                 }
             },
             "autoload": {
@@ -1993,81 +2054,20 @@
                 "jms payment",
                 "payment"
             ],
-            "time": "2014-10-31 19:51:11"
-        },
-        {
-            "name": "payum/omnipay-bridge",
-            "version": "dev-master",
-            "target-dir": "Payum/OmnipayBridge",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Payum/OmnipayBridge.git",
-                "reference": "fc88f8bfc7fd20894fb901a4333032921b57fd73"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Payum/OmnipayBridge/zipball/fc88f8bfc7fd20894fb901a4333032921b57fd73",
-                "reference": "fc88f8bfc7fd20894fb901a4333032921b57fd73",
-                "shasum": ""
-            },
-            "require": {
-                "omnipay/common": "~2.0",
-                "payum/core": "0.13.*@dev",
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "omnipay/dummy": "~2.0",
-                "phpunit/phpunit": "~4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.13-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Payum\\OmnipayBridge": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Community contributions",
-                    "homepage": "https://github.com/Payum/OmnipayBridge/contributors"
-                },
-                {
-                    "name": "Kotlyar Maksim",
-                    "email": "kotlyar.maksim@gmail.com"
-                },
-                {
-                    "name": "Payum project",
-                    "homepage": "http://payum.org/"
-                }
-            ],
-            "description": "This bridge allows you to use omnipay gateways but in payum like way.",
-            "homepage": "https://github.com/Payum/OmnipayBridge",
-            "keywords": [
-                "omnipay",
-                "payment"
-            ],
-            "time": "2014-10-29 09:44:59"
+            "time": "2014-10-29 09:13:56"
         },
         {
             "name": "payum/payum",
-            "version": "dev-master",
+            "version": "0.12.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Payum/Payum.git",
-                "reference": "947428ab16bb75696fe121a37da6229ac55fd1e2"
+                "reference": "c9c2b967abc7799e1b212cd3f1f55b4db23e695b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Payum/Payum/zipball/947428ab16bb75696fe121a37da6229ac55fd1e2",
-                "reference": "947428ab16bb75696fe121a37da6229ac55fd1e2",
+                "url": "https://api.github.com/repos/Payum/Payum/zipball/c9c2b967abc7799e1b212cd3f1f55b4db23e695b",
+                "reference": "c9c2b967abc7799e1b212cd3f1f55b4db23e695b",
                 "shasum": ""
             },
             "require": {
@@ -2075,8 +2075,8 @@
                 "ext-soap": "*",
                 "fp/klarna-invoice": "0.1.*",
                 "klarna/checkout": "~1",
-                "kriswallsmith/buzz": "~0.13",
-                "league/url": "~3.0",
+                "kriswallsmith/buzz": "*",
+                "omnipay/common": "~2.0",
                 "paypal/rest-api-sdk-php": "0.5.*",
                 "php": ">=5.3.2",
                 "stripe/stripe-php": "~1.0",
@@ -2089,6 +2089,7 @@
                 "payum/klarna-checkout": "self.version",
                 "payum/klarna-invoice": "self.version",
                 "payum/offline": "self.version",
+                "payum/omnipay-bridge": "self.version",
                 "payum/payex": "self.version",
                 "payum/paypal-express-checkout-nvp": "self.version",
                 "payum/paypal-ipn": "self.version",
@@ -2102,6 +2103,7 @@
                 "doctrine/orm": "2.3.*",
                 "ext-curl": "*",
                 "ext-pdo_sqlite": "*",
+                "omnipay/dummy": "~2.0",
                 "phpunit/phpunit": "~4.0",
                 "psr/log": "~1.0",
                 "symfony/form": "~2.3",
@@ -2123,7 +2125,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.13-dev"
+                    "dev-master": "0.12-dev"
                 }
             },
             "autoload": {
@@ -2149,7 +2151,7 @@
                     "homepage": "http://payum.org/"
                 }
             ],
-            "description": "Domain friendly payment framework. Paypal, payex, authorize.net, be2bill, recurring payments, instant notifications and many more",
+            "description": "Domain friendly payment framework. Paypal, payex, authorize.net, be2bill, omnipay, recurring payments, instant notifications and many more",
             "homepage": "http://payum.org",
             "keywords": [
                 "authorize.net",
@@ -2157,6 +2159,7 @@
                 "instant payment notification",
                 "ipn",
                 "jms payment",
+                "omnipay",
                 "payex",
                 "payment",
                 "paypal",
@@ -2169,25 +2172,25 @@
                 "stripe checkout",
                 "stripe.js"
             ],
-            "time": "2014-11-06 12:09:40"
+            "time": "2014-11-08 12:58:31"
         },
         {
             "name": "payum/payum-bundle",
-            "version": "dev-master",
+            "version": "0.12.1",
             "target-dir": "Payum/Bundle/PayumBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Payum/PayumBundle.git",
-                "reference": "ab1ac440bbf74a85f0e0b7e4fa594c8ddb6e2334"
+                "reference": "8430593fcd868e59ccf327a5ddb60b880a9a2cfd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Payum/PayumBundle/zipball/ab1ac440bbf74a85f0e0b7e4fa594c8ddb6e2334",
-                "reference": "ab1ac440bbf74a85f0e0b7e4fa594c8ddb6e2334",
+                "url": "https://api.github.com/repos/Payum/PayumBundle/zipball/8430593fcd868e59ccf327a5ddb60b880a9a2cfd",
+                "reference": "8430593fcd868e59ccf327a5ddb60b880a9a2cfd",
                 "shasum": ""
             },
             "require": {
-                "payum/core": "0.13.*@dev",
+                "payum/core": "0.12.*",
                 "php": ">=5.3.2",
                 "symfony/form": "~2.3",
                 "symfony/framework-bundle": "~2.3",
@@ -2199,9 +2202,7 @@
                 "omnipay/dummy": "~2.0",
                 "omnipay/paypal": "~2.0",
                 "omnipay/stripe": "~2.0",
-                "payum/jms-payment-bridge": "0.13.*dev",
-                "payum/omnipay-bridge": "0.13.*dev",
-                "payum/payum": "0.13.*@dev",
+                "payum/payum": "0.12.*",
                 "phpunit/phpunit": "~4.0",
                 "symfony/browser-kit": "~2.3",
                 "symfony/class-loader": "~2.3"
@@ -2209,7 +2210,6 @@
             "suggest": {
                 "payum/authorize-net-aim": "If you want to use authorize.net gateway",
                 "payum/be2bill": "If you want to use be2bill gateway",
-                "payum/jms-payment-bridge": "If you want to use jms payment plugins",
                 "payum/offline": "If you want to manage offline payments",
                 "payum/omnipay-bridge": "If you want to use omnipay provided gateways",
                 "payum/payex": "If you want to use payex gateway",
@@ -2220,7 +2220,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.13-dev"
+                    "dev-master": "0.12-dev"
                 }
             },
             "autoload": {
@@ -2266,7 +2266,7 @@
                 "stripe.js",
                 "symfony"
             ],
-            "time": "2014-11-06 09:53:04"
+            "time": "2014-11-07 21:33:05"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -3131,16 +3131,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v1.17.2",
+            "version": "v1.17.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "548ed675dc3b1dd6fa4d20b40867cb756e952d2a"
+                "reference": "d07ee46fe6862a36ca5cd30107493e1e335b35d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/548ed675dc3b1dd6fa4d20b40867cb756e952d2a",
-                "reference": "548ed675dc3b1dd6fa4d20b40867cb756e952d2a",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/d07ee46fe6862a36ca5cd30107493e1e335b35d5",
+                "reference": "d07ee46fe6862a36ca5cd30107493e1e335b35d5",
                 "shasum": ""
             },
             "require": {
@@ -3175,7 +3175,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2014-09-23 22:42:10"
+            "time": "2014-11-07 04:41:03"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3523,53 +3523,6 @@
             "time": "2014-10-24 06:55:39"
         },
         {
-            "name": "true/punycode",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/true/php-punycode.git",
-                "reference": "59dca474914324763397be2ea3d6ad3bc48f4688"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/true/php-punycode/zipball/59dca474914324763397be2ea3d6ad3bc48f4688",
-                "reference": "59dca474914324763397be2ea3d6ad3bc48f4688",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.x",
-                "satooshi/php-coveralls": "dev-master",
-                "squizlabs/php_codesniffer": "2.0.x-dev"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "True\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Renan Gonçalves",
-                    "email": "renan.saddam@gmail.com"
-                }
-            ],
-            "description": "A Bootstring encoding of Unicode for Internationalized Domain Names in Applications (IDNA)",
-            "homepage": "https://github.com/true/php-punycode",
-            "keywords": [
-                "idna",
-                "punycode"
-            ],
-            "time": "2014-08-26 14:21:01"
-        },
-        {
             "name": "twig/extensions",
             "version": "v1.0.1",
             "source": {
@@ -3676,27 +3629,18 @@
             "time": "2014-10-17 12:53:44"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
         "doctrine/mongodb": 20,
         "doctrine/mongodb-odm": 20,
         "doctrine/mongodb-odm-bundle": 20,
-        "payum/payum-bundle": 20,
-        "payum/payum": 20,
-        "payum/jms-payment-bridge": 20,
-        "payum/omnipay-bridge": 20
+        "ledjin/sagepay-bundle": 20
     },
     "prefer-stable": false,
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }

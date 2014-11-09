@@ -23,14 +23,15 @@
         "sensio/generator-bundle": "2.3.*",
         "incenteev/composer-parameter-handler": "~2.0",
         "jms/payment-paypal-bundle": "~1",
-        "payum/payum-bundle": "0.13.*@dev",
-        "payum/payum": "0.13.*@dev",
-        "payum/jms-payment-bridge": "0.13.*@dev",
-        "payum/omnipay-bridge": "0.13.*@dev",
+        "payum/payum-bundle": "~0.12.0",
+        "payum/payum": "~0.12.0",
+        "payum/jms-payment-bridge": "~0.12.0",
+        "payum/omnipay-bridge": "~0.12.0",
         "omnipay/stripe": "~2.0",
         "omnipay/paypal": "~2.0",
         "stripe/stripe-php": "~1.0",
-        "phpunit/phpunit": "~4.0"
+        "phpunit/phpunit": "~4.0",
+        "ledjin/sagepay-bundle": "0.1.*@dev"
     },
     "scripts": {
         "post-install-cmd": [
@@ -58,7 +59,7 @@
             "file": "app/config/parameters.yml"
         },
         "branch-alias": {
-            "dev-master": "0.13-dev"
+            "dev-master": "0.12-dev"
         }
     }
 }
