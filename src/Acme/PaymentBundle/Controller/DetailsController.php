@@ -24,11 +24,11 @@ class DetailsController extends PayumController
 
         $refundToken = null;
         if ($status->isCaptured() || $status->isAuthorized()) {
-            $refundToken = $this->getTokenFactory()->createRefundToken(
-                $token->getPaymentName(),
-                $status->getModel(),
-                $request->getUri()
-            );
+       //     $refundToken = $this->getTokenFactory()->createRefundToken(
+       //         $token->getPaymentName(),
+       //         $status->getModel(),
+       //         $request->getUri()
+       //     );
         }
 
         return $this->render('AcmePaymentBundle:Details:view.html.twig', array(
